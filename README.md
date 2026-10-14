@@ -89,6 +89,7 @@ inventory-app/
 └── README.md                 # Dokumentasi resmi proyek
 
 
+---
 
 ## Panduan Cara Menjalankan Aplikasi
 
