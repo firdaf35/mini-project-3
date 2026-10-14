@@ -13,13 +13,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->execute([$username]);
         $user = $stmt->fetch();
 
-        // Bypass pengecekan hash sementara agar langsung bisa login
+        
         if ($user && ($password === $user['password'] || password_verify($password, $user['password']))) {
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['username'] = $user['username'];
             $_SESSION['role'] = $user['role'];
 
-            // Diarahkan langsung ke products/index.php sesuai struktur foldermu
+            
             header("Location: products/index.php");
             exit;
         } else {
