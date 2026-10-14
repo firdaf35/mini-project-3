@@ -56,7 +56,7 @@ Aplikasi ini dikembangkan menggunakan kombinasi teknologi backend, database, dan
 
 ## Aturan Bisnis dan Keamanan (Business Rules & Security)
 
-Aplikasi ini menerapkan standar aturan bisnis dan keamanan data sebagai berikut:
+Menerapkan standar aturan bisnis dan keamanan data sebagai berikut:
 
 1. Pencegahan SQL Injection: Seluruh query database menggunakan PDO Prepared Statements (`prepare` dan `execute`) tanpa menggunakan manipulasi string langsung (query concatenation).
 2. Pencegahan XSS (Cross-Site Scripting): Setiap output variabel yang ditampilkan ke layar HTML dienkapsulasi menggunakan fungsi `htmlspecialchars()`.
@@ -73,13 +73,11 @@ Berikut adalah petunjuk langkah demi langkah untuk menjalankan aplikasi ini di l
 * XAMPP (dengan PHP versi 8.0 ke atas).
 * Web Browser (Google Chrome, Microsoft Edge, atau Mozilla Firefox).
 
----
 
 ### Langkah 1: Penyiapan Folder Proyek
 1. Pindahkan seluruh folder `inventory-app` ke dalam direktori `htdocs` tempat XAMPP terinstal.
    * Lokasi standar di Windows: `C:\xampp\htdocs\inventory-app\`
 
----
 
 ### Langkah 2: Impor Database di phpMyAdmin
 1. Buka XAMPP Control Panel, lalu jalankan modul **Apache** dan **MySQL** (klik tombol **Start** pada keduanya).
@@ -95,7 +93,6 @@ Berikut adalah petunjuk langkah demi langkah untuk menjalankan aplikasi ini di l
    * Gulir ke bawah dan klik tombol **Import** / **Go**.
    * Pastikan seluruh tabel (`users`, `categories`, `products`, `suppliers`, `stock_transactions`) berhasil diimpor.
 
----
 
 ### Langkah 3: Menjalankan Aplikasi di Browser
 1. Buka web browser.
