@@ -65,32 +65,6 @@ Aplikasi ini menerapkan standar aturan bisnis dan keamanan data sebagai berikut:
 
 ---
 
-## Struktur Folder Proyek
-
-```text
-inventory-app/
-├── config/
-│   └── database.php          # File konfigurasi koneksi database PDO
-├── database/
-│   └── schema.sql            # File SQL struktur tabel, relasi, dan data awal
-├── public/
-│   ├── login.php             # Halaman utama autentikasi login
-│   ├── logout.php            # Handler untuk menghancurkan sesi login
-│   ├── dashboard.php         # Dashboard analitik utama dan statistik
-│   ├── products/
-│   │   ├── index.php         # Halaman daftar tabel seluruh produk bunga
-│   │   ├── create.php        # Form tambah produk bunga baru
-│   │   ├── edit.php          # Form edit data produk bunga
-│   │   └── delete.php        # Script pemroses hapus produk
-│   └── stock/
-│       ├── in.php            # Form pencatatan barang masuk
-│       ├── out.php           # Form pencatatan barang keluar
-│       └── history.php       # Halaman riwayat lengkap transaksi stok
-└── README.md                 # Dokumentasi resmi proyek
-
-
----
-
 ## Panduan Cara Menjalankan Aplikasi
 
 Berikut adalah petunjuk langkah demi langkah untuk menjalankan aplikasi ini di lingkungan lokal:
@@ -128,3 +102,33 @@ Berikut adalah petunjuk langkah demi langkah untuk menjalankan aplikasi ini di l
 2. Masukkan URL berikut pada address bar:
    ```text
    http://localhost/inventory-app/public/login.php
+
+
+---
+
+
+## Struktur Folder Proyek
+
+```text
+inventory-app/
+├── config/
+│   └── database.php          # File konfigurasi koneksi database PDO
+├── database/
+│   └── schema.sql            # File SQL struktur tabel, relasi, dan data awal
+├── public/
+│   ├── login.php             # Halaman utama autentikasi login
+│   ├── logout.php            # Handler untuk menghancurkan sesi login
+│   ├── dashboard.php         # Dashboard analitik utama dan statistik
+│   ├── products/
+│   │   ├── index.php         # Halaman daftar tabel seluruh produk bunga
+│   │   ├── create.php        # Form tambah produk bunga baru
+│   │   ├── edit.php          # Form edit data produk bunga
+│   │   └── delete.php        # Script pemroses hapus produk
+│   └── stock/
+│       ├── in.php            # Form pencatatan barang masuk
+│       ├── out.php           # Form pencatatan barang keluar
+│       └── history.php       # Halaman riwayat lengkap transaksi stok
+└── README.md                 # Dokumentasi resmi proyek
+
+
+
